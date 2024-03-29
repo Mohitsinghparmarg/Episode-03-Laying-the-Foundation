@@ -3,43 +3,46 @@
  
 
  // React.createElement=> ReactElement(Object) => HTMLElement(render)
-
- /*   const heading = React.createElement("h1",
-  *      {id:"heading"},
-  *     "hello mohit! How are you?"
-    );
-   */
+         // shortHand syntax to create React Element:
+            // const heading = <h1 id="heading">hello mohit! How are you?</h1>
+           // console.log(heading)
   
 
 
  // JSX -> HTML - Like or XML-Like Syntax.
- // JSX (Transpiled before it reaches the JS)->parcel->Babel(JS Compiler).
+
+ // JSX (Transpiled before it reaches the JS Engine)->parcel->Babel(JS Compiler).
+
  // JSX => React.createElement => ReactElement-JS Object => HTMLElement(render).
 
  // React Element
-    const jSXHeading =( 
+     const jSXHeading =( 
               <h1 id="heading" className="xyz">
                 Hello mohit you are writting in JSX
               </h1>
-  );
-
-  // React Component
-  // Class Based Component -> OLD
-  // Functional Based Component -> NEW
+       );
 
   const title = (
          <h3>this is title </h3>
   );
 
-  // React Functional Component ->it is just a normal JavaScript=> return a piece of JSX
-      const HeadingComponent1 = () => {
-           return <h1 id="xyz" className="heading1">
-            Namaste React Functional Component1
-          </h1>
-      };
-  // shortHand syntax
+ 
+  // Class Based Component -> OLD
+  // Functional Based Component -> NEW
 
-  // this is called component composition=> a component in another component
+
+  // React Functional Component ->it is just a normal JavaScript function => return a piece of JSX
+
+
+    // Functional Based Component:
+         const HeadingComponent1 = () => {
+                   return ( 
+                          <h1 id="xyz" className="heading1">
+                        Namaste React Functional Component1
+                      </h1>
+             )
+      };
+
 
    const number = 1000;
 
@@ -55,21 +58,14 @@
         </h1>
         </div>
   );
+// this is called component composition=> a component in another component
 
   // <HeadingComponent1> ,{HeadingComponent1()} and <HeadingComponent1></HeadingComponent1> these are same.
     
    // if there are multiple lines then use () .      
 
    const root = ReactDOM.createRoot(document.getElementById("root"));
-
-  //  root.render(heading);
-
    root.render(jSXHeading);
-
-  //  console.log(heading); // Object
-
-   console.log(jSXHeading);
-
-   // How to render React Components
-    //  root.render(<HeadingComponent1/>);
+   // How to render React Components:
+              //  root.render(<HeadingComponent1/>);
      root.render(<HeadingComponent2/>);
