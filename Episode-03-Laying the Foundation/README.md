@@ -47,15 +47,15 @@ In the context of react,
 
 Babel is responsible for transforming JSX syntax into regular JavaScript, while Parcel provides a convenient bundling solution that automatically applies Babel transformations, making it easier for developers to work with JSX in their projects without manual configuration.
 
--> Components
+-> Components:
 components are fundamental to building applications with React, providing a structured and modular approach to building user interfaces. They promote code reuse, maintainability, and scalability, making it easier to develop and maintain complex applications.
 
--> Functional Components
+-> Functional Components:
    functional components offer a simpler, more lightweight approach to building UI components 
    in React. They are a key feature of modern React development, offering improved performance, 
    reusability, and a more functional programming style.
 
--> Composing Components
+-> Composing Components:
     Composing components in React refers to the practice of combining multiple smaller 
     components together to create more complex and feature-rich user interfaces. This approach 
    leverages the modularity and reusability of components to build UIs in a hierarchical and 
