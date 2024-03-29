@@ -3,8 +3,6 @@
    JSX is what react uses to render content to page. JSX stands for JavaScript as XML, hence 
    it’s HTML like syntax. The extra features of JSX that don’t come with just plain HTML is 
     things like conditional rendering and dynamic content.
-   { showContent ? <p>This is content</p> : null}
-   <p>{counter} </p>
 
 -> JSX is an extension to javascript syntax. It allows writing code that look similar to html, and that similarity makes it feel pretty natural in the context of a front-End UI library. JSX is very commonly used with React, though technically you could do React without JSX (it would be combersome, so I don't recommend it), and the JSX syntax can be used with other libraries than react (this isn't common).
 In the context of react,
